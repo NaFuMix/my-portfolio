@@ -1,0 +1,21 @@
+body{
+    background-color: orange;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    position: relative;
+    width:20vw;
+    height: 15vh;
+    background-color: rgb(251, 190, 79);
+    box-shadow: 1px 1px 20px white;
+    padding: 10px;
+    margin: 20vh 20vw;
+    border: 2px  solid black;
+}
+.text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
