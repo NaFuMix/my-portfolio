@@ -3,19 +3,30 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .container{
-    position: relative;
-    width:20vw;
-    height: 15vh;
-    background-color: rgb(251, 190, 79);
-    box-shadow: 1px 1px 20px white;
-    padding: 10px;
-    margin: 20vh 20vw;
-    border: 2px  solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    max-width: 100vw;
+    height: 70vh;
+    
 }
 .text{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.container .text{
+    border: 2px solid black;
+    width: 500px;
+    height: 30vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 178, 35);
+    box-shadow: 1px 1px 20px white;
+}
+img{
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px whitesmoke;
 }
