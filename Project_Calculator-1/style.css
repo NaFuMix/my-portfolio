@@ -1,0 +1,100 @@
+body{
+    background-color: black;
+    font-family:sans-serif;
+    margin: 150px;
+    font-size: 25px;
+}
+.box{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 280px;
+    border-radius: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 1px 1px 20px rgb(126, 110, 16);
+    transition: 750ms;
+}
+.box:hover{
+    box-shadow: 1px 1px 20px rgb(221, 192, 28);;
+}
+.main{
+    color: rgb(218, 189, 23);
+    text-shadow: 2px 2px 5px rgb(218, 189, 23);
+}
+input{
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    font-size: 20px;
+    color: rgb(218, 189, 23);
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    border-radius: 8px;
+    border-color: transparent;
+    margin-bottom: 25px;
+}
+input:hover{
+    border: yellow solid;
+}
+button{
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    background-color: rgb(218, 189, 23);
+    border-color: transparent;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+button:hover{
+    border: white solid 1px;
+}
+body {
+    background-color: #181818; /* dark background */
+    font-family: sans-serif;
+}
+
+.dropdown-container {
+    display: inline-block;
+    position: relative;
+    left: -120px;
+    margin-bottom: 35px;
+}
+
+select {
+    background-color: #222;
+    color: yellow;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+.dropdown-container::after {
+    content: '▼';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 12px;
+    color: gray;
+}
+
+select:hover {
+    background-color: #333;
+}
+
+.result{
+    color: rgb(218, 189, 23);
+    text-shadow: 2px 2px 5px rgb(218, 189, 23);
+}

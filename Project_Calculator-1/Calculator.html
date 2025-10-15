@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center>
+        <h1 class="main">High Class Calculator</h1>
+    <form onsubmit="calculator(event)" class="box">
+        <div class="">
+            <input type="number" id="x" placeholder="Number">
+        </div>
+        <div>
+            <input type="number" id="y" placeholder="Number">
+        </div>
+        <div class="dropdown-container">
+            <select id="option">
+                <option value="plus">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">×</option>
+                <option value="divide">÷</option>
+                <option value="modulo">%</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Calculate</button>
+        </div>
+    <div class="result">
+        <h1 id="answer">Result</h1>
+    </div>
+    </form>
+</center>
+    
+<script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <div id="main-container"></div>
+    <script>
+        const mainContainer = document.getElementById("main-container");
+
+        const snapshotsDiv = document.createElement("div");
+
+        const snapshotsTitle = document.createElement("h1");
+        snapshotsTitle.textContent = "Demon Slayer !!!";
+        snapshotsDiv.appendChild(snapshotsTitle);
+
+        const snapshotsList = document.createElement("ul");
+
+        const tanjiro = document.createElement("li");
+        const tanjiroAnchor = document.createElement("a");
+        tanjiroAnchor.textContent = "Tanjiro";
+        tanjiroAnchor.href = "#";
+        tanjiroAnchor.style.cursor = "pointer";
+        tanjiroAnchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            image.src = "https://a.storyblok.com/f/178900/960x540/6e6bcda041/demon-slayer.jpg/m/filters:quality(95)format(webp)";
+        });
+        tanjiro.appendChild(tanjiroAnchor);
+        snapshotsList.appendChild(tanjiro);
+
+        const kanao = document.createElement("li");
+        const kanaoAnchor = document.createElement("a");
+        kanaoAnchor.textContent = "Kanao";
+        kanaoAnchor.href = "#";
+        kanaoAnchor.style.cursor = "pointer";
+        kanaoAnchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            image.src = "https://comicbook.com/wp-content/uploads/sites/4/2021/10/90becb5c-2bc0-4ee7-8a7d-4b98d4addb1a.png?w=1024";
+        });
+        kanao.appendChild(kanaoAnchor);
+        snapshotsList.appendChild(kanao);
+
+        const nezuko = document.createElement("li");
+        const nezukoAnchor = document.createElement("a");
+        nezukoAnchor.textContent = "Nezuko";
+        nezukoAnchor.href = "#";
+        nezukoAnchor.style.cursor = "pointer";
+        nezukoAnchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            image.src = "https://static0.cbrimages.com/wordpress/wp-content/uploads/2023/11/nezuko-demons-slayer.jpg";
+        });
+        nezuko.appendChild(nezukoAnchor);
+        snapshotsList.appendChild(nezuko);
+
+        const akaza = document.createElement("li");
+        const akazaAnchor = document.createElement("a");
+        akazaAnchor.textContent = "Akaza";
+        akazaAnchor.href = "#";
+        akazaAnchor.style.cursor = "pointer";
+        akazaAnchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            image.src = "https://a.storyblok.com/f/178900/1280x720/4972c19318/demon-slayer-infinity-castle-akaza-hero.png";
+        });
+        akaza.appendChild(akazaAnchor);
+        snapshotsList.appendChild(akaza);
+
+        snapshotsDiv.appendChild(snapshotsList);
+
+        const image = document.createElement("img");
+        image.src = "https://images6.alphacoders.com/108/thumb-1920-1087271.jpg";
+        image.alt = "Default Image";
+        image.style.width = "800px";
+        image.style.height = "500px";
+        snapshotsDiv.appendChild(image);
+
+        mainContainer.appendChild(snapshotsDiv);
+    </script>
+</body>
+
+</html>

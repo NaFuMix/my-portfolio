@@ -1,0 +1,12 @@
+body{
+    background-color: lightblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+input{
+    padding-inline: 100px;
+    text-align: center;
+}
+.input{
+    justify-content: center;
+}

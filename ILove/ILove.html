@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>ILove</Title>
+<style>
+body{
+    background-color: rgb(240, 223, 156);
+    font-family:cursive;
+}
+.box{
+    text-align:center;
+}
+.button_container{
+    padding-top: 7%;
+    text-align: center;
+    justify-content: center;
+    align-items:center;
+    padding-right: 65px;
+    gap: 25px;
+
+}
+button{
+    padding: 10px 15px;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    font-family: cursive;
+    transition: 0.7s;
+    
+    
+}
+button:hover{
+    width: 90px;
+    height: 60px;
+    background-color: brown;
+
+}
+#Yes{
+    border-radius: 10px;
+    background-color: rgb(247, 39, 101);
+    color: white;
+    position: relative;
+
+}
+#Yes:hover{
+    background-color: rgb(222, 10, 10);
+}
+#No{
+    border-radius: 10px;
+    background-color: rgb(247, 39, 101);
+    color: white;
+    position: absolute;
+    transition: none;
+
+}
+#No:hover{
+    background-color: rgb(222, 10, 10);
+
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+</style>
+</head>
+<body>
+    <h1>Do you love me?</h1>
+    <div class="box">
+    <img style="border:radius 20px;" src="I Love You Heart GIF by BREAD TREE.gif" alt="My Love" width="230">
+    </div>
+    <div class="button_container">
+    <button onclick="window.location.href='ILove_2.html'" id="Yes">Yes</button>
+    <button id="No">No</button>
+    </div>
+    <script>
+    const button = document.getElementById("No");
+
+    button.addEventListener("mouseover", () => {
+      const maxX = window.innerWidth - button.offsetWidth;
+      const maxY = window.innerHeight - button.offsetHeight;
+      const newX = Math.random() * maxX;
+      const newY = Math.random() * maxY;
+
+      button.style.left = `${newX}px`;
+      button.style.top = `${newY}px`;
+    });
+    </script>
+</body>
+</html>
